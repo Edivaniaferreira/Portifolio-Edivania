@@ -1,171 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Edivania Ferreira</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --rosa-claro: #ffdde1;
-      --rosa-vibrante: #ff3cac;
-      --roxo: #784ba0;
-      --fundo: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
-      --texto: #2c2c2c;
-      --branco: #ffffff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--fundo);
-      color: var(--texto);
-      overflow-x: hidden;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 1rem 3rem;
-      background: var(--rosa-vibrante);
-      color: var(--branco);
-      clip-path: ellipse(100% 100% at 50% 0%);
-      animation: fadeInDown 1s ease-in-out;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 1rem;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    section {
-      margin-bottom: 3rem;
-      background: var(--branco);
-      padding: 2rem;
-      border-radius: 25px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease;
-    }
-
-    section:hover {
-      transform: translateY(-6px);
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: var(--roxo);
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    ul li {
-      margin-bottom: 0.7rem;
-      font-size: 1.1rem;
-    }
-
-    .projetos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
-    .projeto {
-      background: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);
-      border-radius: 20px;
-      padding: 1rem;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .projeto:hover {
-      transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(30px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-30px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <header>
-    <h1>Edivania Ferreira</h1>
-    <p>Designer Gráfica | Criatividade com Amor</p>
+    <h1>A DESIGN</h1>
+    <div class="portfolio-title">
+      <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
+    </div>
+    <p class="tagline">✦ Visual Design ✦ Branding ✦ Motion</p>
   </header>
 
-  <div class="container">
-    <section>
-      <h2>Sobre Mim</h2>
-      <p>Sou uma designer apaixonada por criar artes que encantam. Atuo com impressão UV, sublimação, corrosão e muito mais. Cada projeto é feito com dedicação e criatividade!</p>
-    </section>
+  <section class="intro">
+    <div class="text">
+      <h2>Hello!</h2>
+      <p>I'm Esdivania, a Graphic Designer with experience in visual communication, social media and branding. Passionate about creative design, I’ve worked with various digital tools to bring impactful ideas to life.</p>
+      <p>In this portfolio, you’ll see some of my creations and concepts. Let's keep scrolling!</p>
+    </div>
 
-    <section>
-      <h2>Experiência</h2>
+    <div class="skills">
+      <h3>Technical Skills</h3>
       <ul>
-        <li><strong>Placas Express</strong> – Designer (Atualmente)</li>
-        <li><strong>Kalunga S.A.</strong> – Assistente de Produtos</li>
-        <li><strong>Clicheria Voluntários</strong> – Estágio em Arte-final</li>
-        <li><strong>Amazon</strong> – Auxiliar de Logística</li>
-        <li><strong>Spiral do Brasil</strong> – Jovem Aprendiz</li>
+        <li><span class="dot filled"></span> Adobe Illustrator</li>
+        <li><span class="dot filled"></span> Adobe InDesign</li>
+        <li><span class="dot half"></span> Adobe Photoshop</li>
+        <li><span class="dot empty"></span> Adobe After Effects</li>
+        <li><span class="dot filled"></span> Figma</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Formação</h2>
-      <ul>
-        <li>Técnico em Processos Gráficos – SENAI (2023)</li>
-        <li>Técnico em Design e Comunicação Visual – SENAI (2020)</li>
-        <li>Ensino Médio – EEMTI Presidente Geisel (2018)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>CorelDraw, Photoshop, Illustrator, InDesign</li>
-        <li>Pacote Office (básico)</li>
-        <li>Segurança do Trabalho e Marketing Básico</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projetos</h2>
-      <div class="projetos-grid">
-        <div class="projeto">
-          <p><strong>Cartão de Visita</strong><br>Design moderno para loja feminina</p>
-        </div>
-        <div class="projeto">
-          <p><strong>Placa Homenagem</strong><br>Personalização em acrílico com UV</p>
-        </div>
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <!-- Exemplo de projeto -->
+      <div class="project-item">
+        <img src="images/example-project.jpg" alt="Project Example">
+        <h3>Título do Projeto</h3>
+        <p>Descrição breve do projeto. Pode conter o conceito, ferramentas usadas e objetivo do trabalho.</p>
       </div>
-    </section>
-
-    <section>
-      <h2>Contato</h2>
-      <p>Email: edivania.v450@gmail.com</p>
-      <p>Telefone: (11) 98917-2444</p>
-    </section>
-  </div>
+    </div>
+  </section>
 </body>
 </html>
